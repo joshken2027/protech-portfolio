@@ -1,4 +1,4 @@
-#ProTech Portfolio
+ProTech Portfolio
 
 Welcome to my personal portfolio website.
 
@@ -22,8 +22,8 @@ Features
 
 Live Website
 
-https://joshken2027.github.io/protech-portfolio/
+"Visit ProTech Portfolio" (https://joshken2027.github.io/protech-portfolio/)
 
 Author
 
-Jashrey
+Josh Ken
