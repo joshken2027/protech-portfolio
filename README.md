@@ -26,4 +26,4 @@ Live Website
 
 Author
 
-Josh Ken
+Jashrey
