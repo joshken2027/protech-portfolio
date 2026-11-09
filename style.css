@@ -1,0 +1,693 @@
+[11/9/2026 8:33 AM] Iníolúwa: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Ken | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">JOSH KEN.</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <p class="intro">HELLO, I'M</p>
+            <h1>Josh Ken.</h1>
+            <h2>Creative Designer & Frontend Developer</h2>
+            <p>
+                I transform creative ideas into beautiful
+                digital experiences through design and technology.
+            </p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                I am a creative individual passionate about
+                graphic design, frontend development and technology.
+                I enjoy combining creativity with innovation
+                to create meaningful digital experiences.
+            </p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Featured Projects</h2>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Creative Designs</h3>
+                    <p>Visual designs and professional branding projects.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive website showcasing my creativity.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Landing Page</h3>
+                    <p>A modern website built with HTML and CSS.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Graphic Design</li>
+                <li>Responsive Design</li>
+                <li>Flexbox</li>
+                <li>CSS Grid</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Let's Connect</h2>
+            <p>Have an idea? Let's create something amazing.</p>
+
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Josh Ken. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+[11/9/2026 8:38 AM] Iníolúwa in reply to Iníolúwa:
+> ‎⁨<!DOCTYPE html> <html lang="en"> <head>     <meta...
+/* =========================
+   1. GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0f19;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   2. NAVIGATION - FLEXBOX
+========================= */
+
+header {
+    background-color: #111827;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #22c55e;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #22c55e;
+}
+
+
+/* =========================
+   3. HERO SECTION
+========================= */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(
+        135deg,
+        #0b0f19,
+        #172b27
+    );
+}
+
+.intro {
+    color: #22c55e;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    margin: 10px 0;
+}
+
+.hero h2 {
+    color: #22c55e;
+    font-size: 1.5rem;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #22c55e;
+    color: #07120b;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #16a34a;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   4. ABOUT SECTION
+========================= */
+
+.about {
+    background-color: #111827;
+}
+
+.about p {
+    max-width: 750px;
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   5. PROJECTS - CSS GRID
+========================= */
+
+.projects {
+    background-color: #0b0f19;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #172033;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #293548;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: #22c55e;
+}
+
+.project-card h3 {
+    color: #22c55e;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   6. SKILLS SECTION
+========================= */
+
+.skills {
+    background-color: #111827;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+.skills li {
+    background-color: #172b27;
+    color: #22c55e;
+    padding: 12px 22px;
+    border-radius: 6px;
+    border: 1px solid #22c55e;
+}
+
+
+/* =========================
+   7. CONTACT SECTION
+========================= */
+
+.contact {
+    background-color: #0b0f19;
+}
+
+.contact form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact label {
+    color: #d1d5db;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 14px;
+    background-color: #172033;
+    color: white;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    padding: 14px;
+    background-color: #22c55e;
+    color: #07120b;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =========================
+   8. FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #111827;
+    color: #9ca3af;
+}
+
+
+/* =========================
+   9. RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+[11/9/2026 8:38 AM] Iníolúwa: /* =========================
+   1. GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0f19;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   2. NAVIGATION - FLEXBOX
+========================= */
+
+header {
+    background-color: #111827;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #22c55e;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #22c55e;
+}
+
+
+/* =========================
+   3. HERO SECTION
+========================= */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(
+        135deg,
+        #0b0f19,
+        #172b27
+    );
+}
+
+.intro {
+    color: #22c55e;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    margin: 10px 0;
+}
+
+.hero h2 {
+    color: #22c55e;
+    font-size: 1.5rem;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #22c55e;
+    color: #07120b;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #16a34a;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   4. ABOUT SECTION
+========================= */
+
+.about {
+    background-color: #111827;
+}
+
+.about p {
+    max-width: 750px;
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   5. PROJECTS - CSS GRID
+========================= */
+
+.projects {
+    background-color: #0b0f19;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #172033;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #293548;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: #22c55e;
+}
+
+.project-card h3 {
+    color: #22c55e;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   6. SKILLS SECTION
+========================= */
+
+.skills {
+    background-color: #111827;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+.skills li {
+    background-color: #172b27;
+    color: #22c55e;
+    padding: 12px 22px;
+    border-radius: 6px;
+    border: 1px solid #22c55e;
+}
+
+
+/* =========================
+   7. CONTACT SECTION
+========================= */
+
+.contact {
+    background-color: #0b0f19;
+}
+
+.contact form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact label {
+    color: #d1d5db;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 14px;
+    background-color: #172033;
+    color: white;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    padding: 14px;
+    background-color: #22c55e;
+    color: #07120b;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =========================
+   8. FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #111827;
+    color: #9ca3af;
+}
+
+
+/* =========================
+   9. RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }section {
+        padding: 65px 6%;
+    }
+}
+
+
+/* Mobile phones */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+}
